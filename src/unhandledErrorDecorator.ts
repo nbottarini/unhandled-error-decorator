@@ -6,9 +6,13 @@ export function unhandledErrorDecorator<T>(obj: T, onUnhandledError: ErrorHandle
     const getMethod = (method) => {
         return new Proxy(method, {
             apply: (target, thisArg, argumentsList) => {
-                const result = target.apply(obj, argumentsList)
-                if (result instanceof Promise) return result.catch(e => onUnhandledError(e))
-                return result
+                try {
+                    const result = target.apply(obj, argumentsList)
+                    if (result instanceof Promise) return result.catch(e => onUnhandledError(e))
+                    return result
+                } catch (e) {
+                    onUnhandledError(e)
+                }
             },
         })
     }
