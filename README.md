@@ -6,6 +6,18 @@
 Decorates an object to capture unhandled errors on each public method.
 It helps centralize unhandled error handling on javascript applications. 
 
+## Installation
+
+Npm:
+```
+$ npm install --save @nbottarini/unhandled-error-decoration
+```
+
+Yarn:
+```
+$ yarn add @nbottarini/unhandled-error-decoration
+```
+
 
 ## Usage example
 
