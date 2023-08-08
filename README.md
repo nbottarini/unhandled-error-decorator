@@ -1,4 +1,6 @@
+[![npm](https://img.shields.io/npm/v/@nbottarini/unhandled-error-decorator.svg)](https://www.npmjs.com/package/@nbottarini/unhandled-error-decorator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI Status](https://github.com/nbottarini/unhandled-error-decorator/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/nbottarini/unhandled-error-decorator/actions)
 
 # Unhandled Error Decorator
 Decorates an object to capture unhandled errors on each public method.
