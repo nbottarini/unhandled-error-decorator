@@ -1,10 +1,12 @@
 {
   "name": "@nbottarini/unhandled-error-decorator",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Decorates an object to capture unhandled errors on each public method",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "browser": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
+  "react-native": "dist/esm/index.js",
   "author": "Nicolás Bottarini <nicolasbottarini@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/nbottarini/unhandled-error-decorator-js#readme",
